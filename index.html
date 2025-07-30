@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Torque | On-Farm Pump & Motor Repair</title>
+    <meta name="description" content="Expert on-farm repair and service for agricultural motors and pumps up to 10 HP in Tamil Nadu. Specializing in local brands. Fast, reliable, and honest service.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom styles for better aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A very light grey background */
+        }
+        .hero-section {
+            /* New background image of a farm */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1580910221943-913d08c26ab4?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .section-title {
+            border-bottom: 3px solid #22c55e; /* Green accent */
+            padding-bottom: 8px;
+            display: table; /* Ensures proper centering */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .brand-tag {
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+        .brand-tag:hover {
+            background-color: #d1d5db;
+            color: #1f2937;
+        }
+        #language-toggle {
+            border: 2px solid #d1fae5;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-700">Agro Torque</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-green-700 font-medium" data-lang-key="nav_services">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-green-700 font-medium" data-lang-key="nav_about">About Us</a>
+                <a href="#why-us" class="text-gray-600 hover:text-green-700 font-medium" data-lang-key="nav_why_us">Why Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-700 font-medium" data-lang-key="nav_contact">Contact</a>
+            </div>
+            <!-- Language and Mobile Contact -->
+            <div class="flex items-center gap-4">
+                 <button id="language-toggle" class="btn bg-gray-800 text-white font-bold py-2 px-4 rounded-full text-sm flex items-center justify-center gap-2">
+                    <i class="fas fa-globe"></i>
+                    <span data-lang-key="lang_toggle">English | தமிழ்</span>
+                </button>
+                <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 btn md:hidden" data-lang-key="nav_contact_btn">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white py-20 md:py-32">
+            <div class="container mx-auto text-center px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4" data-lang-key="hero_title">Reliable Agricultural Motor Repair</h1>
+                <p class="text-2xl md:text-3xl font-semibold text-green-200 mb-8" data-lang-key="hero_subtitle">நம்பகமான விவசாய மோட்டார் பழுதுபார்ப்பு</p>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10" data-lang-key="hero_desc">On-farm service for all pumps and motors up to 10 HP. Fast, expert solutions to keep your water flowing.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="tel:+919876543210" class="btn bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg w-full md:w-auto flex items-center justify-center">
+                        <i class="fas fa-phone mr-3"></i> <span data-lang-key="hero_call_btn">Call Now for Service</span>
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="btn bg-gray-100 text-green-700 font-bold py-4 px-8 rounded-full text-lg w-full md:w-auto flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-3"></i> <span data-lang-key="hero_whatsapp_btn">Chat on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-title text-3xl md:text-4xl font-bold mb-4" data-lang-key="services_title">Our Services</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12" data-lang-key="services_subtitle">எங்கள் சேவைகள்</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-green-700 mb-4" data-lang-key="service_cat_1">Core Repairs & Maintenance</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_1"><b>Motor Rewinding:</b> Complete rewinding services for burnt out or inefficient motors.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_2"><b>Bearing Change:</b> Replacement of worn-out bearings to reduce noise and prevent further damage.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_3"><b>Rotor & Bush Issues:</b> Expert diagnosis and repair of rotor alignment and bush problems.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_4"><b>General Fault Attendance:</b> Quick response for any motor-related breakdown or issue.</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-green-700 mb-4" data-lang-key="service_cat_2">Installations & Electricals</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_5"><b>New Motor & Compressor Installation:</b> Professional setup for all types of agricultural motors and compressors.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_6"><b>Starter Repairs & Installation:</b> Servicing and installation of motor starters for safe and reliable operation.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_7"><b>Automatic Units:</b> Installation and fault repair for auto-start and automatic controller units.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span data-lang-key="service_8"><b>Preventive Maintenance:</b> Scheduled check-ups to ensure your equipment runs smoothly all year.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/34D399/FFFFFF?text=Agro+Torque+Specialist" alt="Photo of an Agro Torque motor repair specialist" class="rounded-xl shadow-lg w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400/34D399/FFFFFF?text=Image+Not+Available';">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4" data-lang-key="about_title">Your Trusted Motor Specialists</h2>
+                        <p class="text-xl text-gray-700 mb-6 font-semibold" data-lang-key="about_subtitle">எங்களைப் பற்றி</p>
+                        <p class="text-lg text-gray-600 mb-4" data-lang-key="about_p1">With over 25 years of collective hands-on experience, <b>Agro Torque</b> has been a trusted name for farmers across the region. Our journey began with a passion for machinery and a commitment to helping our agricultural community thrive.</p>
+                        <p class="text-lg text-gray-600" data-lang-key="about_p2">Our mission is simple: to provide honest, reliable, and quick service. We understand that a faulty motor can halt your work, and are dedicated to getting you back up and running as fast as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-16 md:py-24 bg-green-700 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title border-green-200 text-3xl md:text-4xl font-bold mb-4" data-lang-key="why_us_title">Why Choose Agro Torque?</h2>
+                <p class="text-lg text-green-200 max-w-2xl mx-auto mb-12" data-lang-key="why_us_subtitle">ஏன் எங்களைத் தேர்ந்தெடுக்க வேண்டும்?</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6"><i class="fas fa-map-marker-alt fa-3x mb-4"></i><h3 class="text-xl font-bold mb-2" data-lang-key="why_us_1_title">Local Expertise</h3><p class="text-green-200" data-lang-key="why_us_1_desc">Deep knowledge of motors from Tamil Nadu brands like Texmo, CRI, and Suguna.</p></div>
+                    <div class="p-6"><i class="fas fa-truck fa-3x mb-4"></i><h3 class="text-xl font-bold mb-2" data-lang-key="why_us_2_title">On-Site Farm Service</h3><p class="text-green-200" data-lang-key="why_us_2_desc">We come to your farm, saving you time and the hassle of transport.</p></div>
+                    <div class="p-6"><i class="fas fa-hand-holding-usd fa-3x mb-4"></i><h3 class="text-xl font-bold mb-2" data-lang-key="why_us_3_title">Fair & Honest Pricing</h3><p class="text-green-200" data-lang-key="why_us_3_desc">Clear estimates with no hidden charges. You pay for quality work.</p></div>
+                    <div class="p-6"><i class="fas fa-bolt fa-3x mb-4"></i><h3 class="text-xl font-bold mb-2" data-lang-key="why_us_4_title">Fast Response</h3><p class="text-green-200" data-lang-key="why_us_4_desc">We understand the urgency and prioritize quick service to minimize downtime.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands We Service -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h3 class="text-center text-gray-600 font-semibold uppercase tracking-wider mb-10" data-lang-key="brands_title">Specializing in All Major Tamil Nadu Motor Brands</h3>
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    <span class="brand-tag">TEXMO</span><span class="brand-tag">C.R.I.</span><span class="brand-tag">SUGUNA</span><span class="brand-tag">b.co</span><span class="brand-tag">PSG</span><span class="brand-tag" data-lang-key="brands_more">& More</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-12" data-lang-key="testimonials_title">What Our Customers Say</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="testimonial-card bg-white p-8 rounded-xl shadow-md border-l-4 border-green-500"><p class="text-gray-600 italic mb-4" data-lang-key="testimonial_1_quote">"They fixed my motor in just a few hours. Very honest and skilled mechanics. My farm was running again the same day. Highly recommended!"</p><p class="font-bold text-gray-800">- Kumar R.</p><p class="text-sm text-gray-500">Palladam</p></div>
+                    <div class="testimonial-card bg-white p-8 rounded-xl shadow-md border-l-4 border-green-500"><p class="text-gray-600 italic mb-4" data-lang-key="testimonial_2_quote">"Excellent service. They explained the problem clearly and gave a fair price. Know everything about Suguna motors. Very trustworthy."</p><p class="font-bold text-gray-800">- Selvi M.</p><p class="text-sm text-gray-500">Annur</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-800 text-white py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-lang-key="contact_title">Need Help With Your Motor?</h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8" data-lang-key="contact_subtitle">தொடர்பு கொள்ள</p>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8" data-lang-key="contact_cta">Call us directly or send a message on WhatsApp for a fast response.</p>
+                <div class="my-8"><a href="tel:+919750920398" class="text-3xl md:text-4xl font-bold text-green-400 hover:text-green-300"><i class="fas fa-phone mr-3"></i>+91 97509 20398</a></div>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="https://wa.me/919750920398" target="_blank" class="btn bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg w-full md:w-auto flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-3"></i> <span data-lang-key="contact_whatsapp_btn">Chat on WhatsApp</span>
+                    </a>
+                </div>
+                <div class="mt-12 text-gray-400">
+                    <p class="font-bold text-lg" data-lang-key="contact_area_title">Service Area:</p><p data-lang-key="contact_area_desc">Coimbatore (Sulur, Karadivavi, Pappampatti, Selekarichal & surrounding areas)</p>
+                    <p class="mt-4 font-bold text-lg" data-lang-key="contact_hours_title">Business Hours:</p><p data-lang-key="contact_hours_desc">Mon - Sat: 8:00 AM - 7:00 PM | Sun: Emergencies Only</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-key="footer_copyright">&copy; 2025 Agro Torque. All Rights Reserved.</p>
+            <p class="text-sm mt-2" data-lang-key="footer_tagline">Website designed to support local farmers.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Language Translation Script ---
+
+        const translations = {
+            en: {
+                nav_services: "Services",
+                nav_about: "About Us",
+                nav_why_us: "Why Us",
+                nav_contact: "Contact",
+                nav_contact_btn: "Contact",
+                lang_toggle: "English | தமிழ்",
+                hero_title: "Reliable Agricultural Motor Repair",
+                hero_subtitle: "நம்பகமான விவசாய மோட்டார் பழுதுபார்ப்பு",
+                hero_desc: "On-farm service for all pumps and motors up to 10 HP. Fast, expert solutions to keep your water flowing.",
+                hero_call_btn: "Call Now for Service",
+                hero_whatsapp_btn: "Chat on WhatsApp",
+                services_title: "Our Services",
+                services_subtitle: "எங்கள் சேவைகள்",
+                service_cat_1: "Core Repairs & Maintenance",
+                service_cat_2: "Installations & Electricals",
+                service_1: "<b>Motor Rewinding:</b> Complete rewinding services for burnt out or inefficient motors.",
+                service_2: "<b>Bearing Change:</b> Replacement of worn-out bearings to reduce noise and prevent further damage.",
+                service_3: "<b>Rotor & Bush Issues:</b> Expert diagnosis and repair of rotor alignment and bush problems.",
+                service_4: "<b>General Fault Attendance:</b> Quick response for any motor-related breakdown or issue.",
+                service_5: "<b>New Motor & Compressor Installation:</b> Professional setup for all types of agricultural motors and compressors.",
+                service_6: "<b>Starter Repairs & Installation:</b> Servicing and installation of motor starters for safe and reliable operation.",
+                service_7: "<b>Automatic Units:</b> Installation and fault repair for auto-start and automatic controller units.",
+                service_8: "<b>Preventive Maintenance:</b> Scheduled check-ups to ensure your equipment runs smoothly all year.",
+                about_title: "Your Trusted Motor Specialists",
+                about_subtitle: "எங்களைப் பற்றி",
+                about_p1: "With over 25 years of collective hands-on experience, <b>Agro Torque</b> has been a trusted name for farmers across the region. Our journey began with a passion for machinery and a commitment to helping our agricultural community thrive.",
+                about_p2: "Our mission is simple: to provide honest, reliable, and quick service. We understand that a faulty motor can halt your work, and are dedicated to getting you back up and running as fast as possible.",
+                why_us_title: "Why Choose Agro Torque?",
+                why_us_subtitle: "ஏன் எங்களைத் தேர்ந்தெடுக்க வேண்டும்?",
+                why_us_1_title: "Local Expertise",
+                why_us_1_desc: "Deep knowledge of motors from Tamil Nadu brands like Texmo, CRI, and Suguna.",
+                why_us_2_title: "On-Site Farm Service",
+                why_us_2_desc: "We come to your farm, saving you time and the hassle of transport.",
+                why_us_3_title: "Fair & Honest Pricing",
+                why_us_3_desc: "Clear estimates with no hidden charges. You pay for quality work.",
+                why_us_4_title: "Fast Response",
+                why_us_4_desc: "We understand the urgency and prioritize quick service to minimize downtime.",
+                brands_title: "Specializing in All Major Tamil Nadu Motor Brands",
+                brands_more: "& More",
+                testimonials_title: "What Our Customers Say",
+                testimonial_1_quote: `"They fixed my motor in just a few hours. Very honest and skilled mechanics. My farm was running again the same day. Highly recommended!"`,
+                testimonial_2_quote: `"Excellent service. They explained the problem clearly and gave a fair price. Know everything about Suguna motors. Very trustworthy."`,
+                contact_title: "Need Help With Your Motor?",
+                contact_subtitle: "தொடர்பு கொள்ள",
+                contact_cta: "Call us directly or send a message on WhatsApp for a fast response.",
+                contact_whatsapp_btn: "Chat on WhatsApp",
+                contact_area_title: "Service Area:",
+                contact_area_desc: "Coimbatore (Sulur, Karadivavi, Pappampatti, Selekarichal & surrounding areas)",
+                contact_hours_title: "Business Hours:",
+                contact_hours_desc: "Mon - Sat: 8:00 AM - 7:00 PM | Sun: Emergencies Only",
+                footer_copyright: "&copy; 2025 Agro Torque. All Rights Reserved.",
+                footer_tagline: "Website designed to support local farmers."
+            },
+            ta: {
+                nav_services: "சேவைகள்",
+                nav_about: "எங்களைப் பற்றி",
+                nav_why_us: "ஏன் நாங்கள்",
+                nav_contact: "தொடர்பு",
+                nav_contact_btn: "தொடர்பு",
+                lang_toggle: "தமிழ் | English",
+                hero_title: "நம்பகமான விவசாய மோட்டார் பழுதுபார்ப்பு",
+                hero_subtitle: "Reliable Agricultural Motor Repair",
+                hero_desc: "10 HP வரையிலான அனைத்து பம்புகள் மற்றும் மோட்டார்களுக்கான ஆன்-பார்ம் சேவை. உங்கள் நீர் ஓட்டத்தை சீராக வைத்திருக்க வேகமான, நிபுணத்துவ தீர்வுகள்.",
+                hero_call_btn: "சேவைக்கு இப்போது அழைக்கவும்",
+                hero_whatsapp_btn: "வாட்ஸ்அப்பில் அரட்டையடிக்கவும்",
+                services_title: "எங்கள் சேவைகள்",
+                services_subtitle: "Our Services",
+                service_cat_1: "முக்கிய பழுது மற்றும் பராமரிப்பு",
+                service_cat_2: "நிறுவல்கள் மற்றும் எலக்ட்ரிக்கல்ஸ்",
+                service_1: "<b>மோட்டார் ரீவைண்டிங்:</b> எரிந்த அல்லது திறனற்ற மோட்டார்களுக்கு முழுமையான ரீவைண்டிங் சேவைகள்.",
+                service_2: "<b>பேரிங் மாற்றம்:</b> சத்தத்தைக் குறைக்கவும் மேலும் சேதத்தைத் தடுக்கவும் தேய்ந்த பேரிங்குகளை மாற்றுதல்.",
+                service_3: "<b>ரோட்டார் & புஷ் சிக்கல்கள்:</b> ரோட்டார் சீரமைப்பு மற்றும் புஷ் பிரச்சனைகளை நிபுணத்துவத்துடன் கண்டறிந்து சரிசெய்தல்.",
+                service_4: "<b>பொதுவான தவறு சரிசெய்தல்:</b> மோட்டார் தொடர்பான எந்தவொரு பழுதுக்கும் விரைவான பதில்.",
+                service_5: "<b>புதிய மோட்டார் & கம்ப்ரசர் நிறுவல்:</b> அனைத்து வகையான விவசாய மோட்டார்கள் மற்றும் கம்ப்ரசர்களுக்கும் தொழில்முறை அமைப்பு.",
+                service_6: "<b>ஸ்டார்டர் பழுது & நிறுவல்:</b> பாதுகாப்பான மற்றும் நம்பகமான செயல்பாட்டிற்காக மோட்டார் ஸ்டார்டர்களை சர்வீஸ் செய்தல் மற்றும் நிறுவுதல்.",
+                service_7: "<b>தானியங்கி அலகுகள்:</b> ஆட்டோ-ஸ்டார்ட் மற்றும் தானியங்கி கட்டுப்பாட்டு அலகுகளுக்கான நிறுவல் மற்றும் தவறு சரிசெய்தல்.",
+                service_8: "<b>தடுப்பு பராமரிப்பு:</b> உங்கள் உபகரணங்கள் ஆண்டு முழுவதும் சீராக இயங்குவதை உறுதிசெய்ய திட்டமிடப்பட்ட சோதனைகள்.",
+                about_title: "உங்கள் நம்பகமான மோட்டார் நிபுணர்கள்",
+                about_subtitle: "About Us",
+                about_p1: "25 ஆண்டுகளுக்கும் மேலான கூட்டு அனுபவத்துடன், <b>அக்ரோ டோர்க்</b> இப்பகுதி விவசாயிகளின் நம்பகமான பெயராக இருந்து வருகிறது. இயந்திரங்கள் மீதான ஆர்வத்துடனும் எங்கள் விவசாய சமூகத்திற்கு உதவ வேண்டும் என்ற அர்ப்பணிப்புடனும் எங்கள் பயணம் தொடங்கியது.",
+                about_p2: "எங்கள் நோக்கம் எளிதானது: நேர்மையான, நம்பகமான மற்றும் விரைவான சேவையை வழங்குவது. ஒரு பழுதடைந்த மோட்டார் உங்கள் வேலையை நிறுத்திவிடும் என்பதை நாங்கள் புரிந்துகொள்கிறோம், மேலும் உங்களை விரைவில் மீண்டும் இயக்க நாங்கள் அர்ப்பணித்துள்ளோம்.",
+                why_us_title: "ஏன் அக்ரோ டோர்க்கை தேர்ந்தெடுக்க வேண்டும்?",
+                why_us_subtitle: "Why Choose Us?",
+                why_us_1_title: "உள்ளூர் நிபுணத்துவம்",
+                why_us_1_desc: "டெக்ஸ்மோ, சி.ஆர்.ஐ, மற்றும் சுகுணா போன்ற தமிழ்நாடு பிராண்டுகளின் மோட்டார்கள் பற்றிய ஆழமான அறிவு.",
+                why_us_2_title: "பண்ணையில் ஆன்-சைட் சேவை",
+                why_us_2_desc: "நாங்கள் உங்கள் பண்ணைக்கு வருகிறோம், உங்கள் நேரத்தையும் போக்குவரத்தின் சிரமத்தையும் மிச்சப்படுத்துகிறோம்.",
+                why_us_3_title: "நியாயமான மற்றும் நேர்மையான விலை",
+                why_us_3_desc: "மறைக்கப்பட்ட கட்டணங்கள் இல்லாத தெளிவான மதிப்பீடுகள். தரமான வேலைக்கு நீங்கள் பணம் செலுத்துகிறீர்கள்.",
+                why_us_4_title: "வேகமான பதில்",
+                why_us_4_desc: "நாங்கள் அவசரத்தைப் புரிந்துகொண்டு, வேலையில்லா நேரத்தைக் குறைக்க விரைவான சேவைக்கு முன்னுரிமை அளிக்கிறோம்.",
+                brands_title: "அனைத்து முக்கிய தமிழ்நாடு மோட்டார் பிராண்டுகளிலும் நிபுணத்துவம்",
+                brands_more: "& மேலும்",
+                testimonials_title: "எங்கள் வாடிக்கையாளர்கள் என்ன சொல்கிறார்கள்",
+                testimonial_1_quote: `"சில மணிநேரங்களில் என் மோட்டாரை சரிசெய்தார்கள். மிகவும் நேர்மையான மற்றும் திறமையான மெக்கானிக். என் பண்ணை அதே நாளில் மீண்டும் இயங்கியது. மிகவும் பரிந்துரைக்கிறேன்!"`,
+                testimonial_2_quote: `"சிறந்த சேவை. அவர்கள் சிக்கலை தெளிவாக விளக்கி, நியாயமான விலை கொடுத்தார்கள். சுகுணா மோட்டார்கள் பற்றி எல்லாம் தெரியும். மிகவும் நம்பகமானவர்."`,
+                contact_title: "உங்கள் மோட்டாருக்கு உதவி தேவையா?",
+                contact_subtitle: "Need Help With Your Motor?",
+                contact_cta: "விரைவான பதிலுக்கு எங்களை நேரடியாக அழைக்கவும் அல்லது வாட்ஸ்அப்பில் செய்தி அனுப்பவும்.",
+                contact_whatsapp_btn: "வாட்ஸ்அப்பில் அரட்டையடிக்கவும்",
+                contact_area_title: "சேவை பகுதி:",
+                contact_area_desc: "கோயம்புத்தூர் (சூலூர், கரடிவாவி, பாப்பம்பட்டி, செலேக்கரிச்சல் மற்றும் சுற்றியுள்ள பகுதிகள்)",
+                contact_hours_title: "வணிக நேரம்:",
+                contact_hours_desc: "திங்கள் - சனி: காலை 8:00 - மாலை 7:00 | ஞாயிறு: அவசரநிலைகளுக்கு மட்டும்",
+                footer_copyright: "&copy; 2025 அக்ரோ டோர்க். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+                footer_tagline: "உள்ளூர் விவசாயிகளுக்கு ஆதரவாக வடிவமைக்கப்பட்ட இணையதளம்."
+            }
+        };
+
+        const languageToggle = document.getElementById('language-toggle');
+        let currentLanguage = 'en';
+
+        const setLanguage = (lang) => {
+            document.querySelectorAll('[data-lang-key]').forEach(element => {
+                const key = element.getAttribute('data-lang-key');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+        };
+
+        languageToggle.addEventListener('click', () => {
+            currentLanguage = currentLanguage === 'en' ? 'ta' : 'en';
+            setLanguage(currentLanguage);
+        });
+
+        // Set initial language
+        setLanguage(currentLanguage);
+
+    </script>
+
+</body>
+</html>
